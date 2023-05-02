@@ -1,5 +1,4 @@
 import React from 'react'
-import hotellogo from '../images/hotelogo.png'
 
 
 function NavBar() {
@@ -12,8 +11,8 @@ function NavBar() {
     return (
         <div >
             <nav class="navbar navbar-expand-lg " style={{margin:'0px'}}>
-                <img src={hotellogo} alt="" style={{height:'50px' , width:'90px' , marginRight:'5px'}}/>
-                <a class="navbar-brand" href="/home">TripMate</a>
+               
+                <a class="navbar-brand" href="/home">GetSetBooking</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon" ><i class="fa-solid fa-bars" style={{ color: "#ffffff" }}></i></span>
                 </button>
@@ -21,7 +20,7 @@ function NavBar() {
                     <ul className="navbar-nav" id="text">
                         {user ? (<>
                             <div class="dropdown">
-                                <button style={{ backgroundColor: '#2c5245' }} class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <button style={{ backgroundColor: 'gray' }} class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class=" fa fa-user" style={{ margin: '3px', padding: '3px' }}></i>
                                     {user.name}
                                 </button>
